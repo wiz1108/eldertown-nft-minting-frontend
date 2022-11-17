@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Forget Me Knot Roman";
+  src: url("./fonts/ForgetMeKnot-Roman.otf") format("opentype");
+  /* url("SofiaProLight.woff") format("woff"); */
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Forget Me Knot Roman" !important;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box !important;
+}

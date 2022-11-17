@@ -1,0 +1,261 @@
+@font-face {
+  font-family: "Forget Me Knot Roman";
+  src: url("./fonts/ForgetMeKnot-Roman.otf") format("opentype");
+  /* url("SofiaProLight.woff") format("woff"); */
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; }
+
+body {
+  font-family: "Forget Me Knot Roman" !important; }
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box !important; }
+
+.home {
+  background: url("./assets/bigBg.png") no-repeat center center fixed;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -1; }
+  .home__wallet {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 200px; }
+  .home__icons {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    @media (max-width: 56.25rem) {
+      .home__icons {
+        margin-top: 4rem; } }
+    .home__icons img {
+      width: 5rem;
+      cursor: pointer; }
+      .home__icons img:not(:first-child) {
+        margin-left: 4rem; }
+        @media (max-width: 56.25rem) {
+          .home__icons img:not(:first-child) {
+            margin-left: 2rem; } }
+  .home__boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transform: scaleY(1.05); }
+    .home__boxes__box {
+      position: relative;
+      display: flex;
+      flex-flow: column;
+      align-items: center; }
+      .home__boxes__box__upper {
+        position: absolute;
+        top: 5.35%;
+        height: 46%;
+        width: 81.5%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .home__boxes__box__upper img {
+          margin-left: 1%;
+          width: 95% !important;
+          height: 95% !important;
+          border-radius: 0.5rem; }
+      .home__boxes__box__lower {
+        position: absolute;
+        bottom: 0;
+        width: 81.5%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .home__boxes__box__lower__btns {
+          width: 100%;
+          display: flex;
+          flex-flow: column;
+          align-items: center; }
+          .home__boxes__box__lower__btns__btn {
+            width: 90%;
+            cursor: pointer;
+            position: relative; }
+            .home__boxes__box__lower__btns__btn:not(:first-child) img {
+              height: 5rem !important; }
+            .home__boxes__box__lower__btns__btn img {
+              width: 100%;
+              height: 3rem !important; }
+            .home__boxes__box__lower__btns__btn h4 {
+              position: absolute;
+              width: 100%;
+              top: 50%;
+              left: 50%;
+              transform: translate(-40%, -50%); }
+            .home__boxes__box__lower__btns__btn h2 {
+              position: absolute;
+              width: 100%;
+              top: 50%;
+              left: 50%;
+              transform: translate(-40%, -50%); }
+            .home__boxes__box__lower__btns__btn div {
+              position: absolute;
+              width: 100%;
+              top: 50%;
+              left: 50%;
+              transform: translate(-40%, -50%); }
+        .home__boxes__box__lower__textBox {
+          width: 80%;
+          height: 8rem;
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          align-items: center;
+          background-color: #19fe1e;
+          border-radius: 0.5rem; }
+          .home__boxes__box__lower__textBox h1 {
+            margin-bottom: -0.8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            font-weight: 800; }
+      .home__boxes__box__content {
+        position: absolute;
+        top: 17%;
+        margin-left: -1rem; }
+        .home__boxes__box__content img {
+          width: 17rem;
+          height: 17rem !important; }
+    .home__boxes__box__white {
+      background-color: white;
+      width: 30rem;
+      text-align: center;
+      padding: 0.8rem 0rem 0 0;
+      border: 3px solid black;
+      position: relative; }
+      @media (max-width: 56.25rem) {
+        .home__boxes__box__white {
+          max-width: 22rem !important;
+          margin-bottom: 2rem;
+          transform: rotate(-1deg); } }
+      .home__boxes__box__white__upper {
+        width: 97%;
+        padding: 0.5rem 4.5rem;
+        border-bottom: 2px solid black; }
+      .home__boxes__box__white__image {
+        width: 100%; }
+        .home__boxes__box__white__image img {
+          width: 15rem !important;
+          height: 15rem !important; }
+      .home__boxes__box__white__third {
+        width: 97%;
+        margin-top: 2rem;
+        border-bottom: 2px solid black;
+        padding-bottom: 1rem; }
+      .home__boxes__box__white__four {
+        padding: 1.5rem 2rem; }
+      .home__boxes__box__white__footer {
+        background-color: black;
+        width: 29.9rem;
+        color: white;
+        padding: 0.7rem 0;
+        margin-bottom: -0.3rem; }
+        @media (max-width: 56.25rem) {
+          .home__boxes__box__white__footer {
+            max-width: 21.9rem !important; } }
+    .home__boxes__phoneBox {
+      width: 22rem;
+      height: 41rem;
+      margin-top: 2rem;
+      background: url("./assets/bgphoneInner.png");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: rotate(-2deg); }
+      @media (min-width: 56.25rem) {
+        .home__boxes__phoneBox {
+          display: none; } }
+      .home__boxes__phoneBox__inner {
+        width: 90%;
+        height: 90%;
+        background: url("./assets/bgphoneOuter.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat; }
+        .home__boxes__phoneBox__inner__btns {
+          width: 100%;
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          padding-top: 0.5rem; }
+          .home__boxes__phoneBox__inner__btns__btn {
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            position: relative; }
+            .home__boxes__phoneBox__inner__btns__btn:not(:first-child) {
+              margin-top: 0.5rem; }
+              .home__boxes__phoneBox__inner__btns__btn:not(:first-child) img {
+                height: 6rem; }
+              .home__boxes__phoneBox__inner__btns__btn:not(:first-child) h4 {
+                width: 91%;
+                transform: translate(-50%, -50%); }
+              .home__boxes__phoneBox__inner__btns__btn:not(:first-child) h2 {
+                width: 91%;
+                transform: translate(-50%, -50%); }
+            .home__boxes__phoneBox__inner__btns__btn h4 {
+              position: absolute;
+              width: 100%;
+              top: 50%;
+              left: 50%;
+              transform: translate(-35%, -50%); }
+            .home__boxes__phoneBox__inner__btns__btn h2 {
+              position: absolute;
+              width: 100%;
+              top: 50%;
+              left: 50%;
+              transform: translate(-35%, -50%); }
+            .home__boxes__phoneBox__inner__btns__btn div {
+              position: absolute;
+              top: 45%;
+              left: 50%;
+              transform: translate(-40%, -50%);
+              z-index: 1006;
+              font-size: 20px; }
+            .home__boxes__phoneBox__inner__btns__btn img {
+              width: 100%; }
+        .home__boxes__phoneBox__inner__logo {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          padding-top: 1rem; }
+          .home__boxes__phoneBox__inner__logo img {
+            width: 70%;
+            border-radius: 0.5rem; }
+    .home__boxes__box:first-child {
+      width: 24rem;
+      padding: 0 !important;
+      margin: 0 !important; }
+      @media (max-width: 56.25rem) {
+        .home__boxes__box:first-child {
+          display: none; } }
+      .home__boxes__box:first-child img {
+        height: 38.8rem; }
